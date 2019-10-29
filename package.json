@@ -1,0 +1,22 @@
+{
+  "name": "bsn_remote_control",
+  "version": "1.0.0",
+  "description": "api to control remotely bsn",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leooleo/bsn_remote_control.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leooleo/bsn_remote_control/issues"
+  },
+  "homepage": "https://github.com/leooleo/bsn_remote_control#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
