@@ -3,7 +3,10 @@ const port = process.env.port || 3000
 const serverComunication = require('./src/serverComunication')
 const { spawn } = require('child_process');
 const sleep = require('system-sleep')
+const cors = require('cors')
 const app = express()
+
+app.use(cors())
 
 bsnRunning = false
 
@@ -52,6 +55,10 @@ app.get('/stop', function (req, res) {
         res.send('stopped');
         bsnRunning = false
     }
+});
+
+app.get('/isActive', function (req, res) {
+    res.send(bsnRunning.toString())
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}!`))
