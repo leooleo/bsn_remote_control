@@ -1,5 +1,5 @@
 const express = require('express')
-const port = process.env.port || 3000
+const port = process.env.port || 80
 const serverComunication = require('./src/serverComunication')
 const { spawn } = require('child_process');
 const sleep = require('system-sleep')

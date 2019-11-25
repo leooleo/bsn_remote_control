@@ -1,8 +1,8 @@
 const request = require('request')
-const serverUrl = 'http://192.168.5.105:8081'
+const serverUrl = 'https://bsnapi.herokuapp.com/'
 
 function pingServer(port) {
-    var url = serverUrl + '/bsnRegister'
+    var url = serverUrl + 'bsnRegister'
 
     request.post(
         url,        
@@ -13,7 +13,10 @@ function pingServer(port) {
                 console.log('Registered succesfully to server')
             }
             else { 
-                console.log('Could not register to server')
+                console.log(body)
+                console.log(response.statusCode)
+                console.log('Could not register to server. Trying again in 5 seconds...')
+                setInterval(pingServer, 5000)
             }
         }
     );
