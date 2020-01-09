@@ -20,6 +20,8 @@ commands = [
     ['../configurations/target_system/', 'roslaunch g3t1_1.launch'],
     ['../configurations/target_system/', 'roslaunch g3t1_2.launch'],
     ['../configurations/target_system/', 'roslaunch g3t1_3.launch'],
+    ['../configurations/target_system/', 'roslaunch g3t1_4.launch'],
+    ['../configurations/target_system/', 'roslaunch g3t1_5.launch'],
     ['../configurations/simulation/', 'roslaunch injector.launch'],
     ['../configurations/system_manager/', 'roslaunch engine.launch'],
 ]
