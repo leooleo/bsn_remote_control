@@ -10,20 +10,24 @@ app.use(cors())
 
 bsnRunning = false
 
+// commands = [
+//     ['../configurations/knowledge_repository/', 'roslaunch data_access.launch'],
+//     ['../configurations/system_manager/', 'roslaunch enactor.launch'],
+//     ['../configurations/logging_infrastructure/', 'roslaunch logger.launch'],
+//     ['../configurations/target_system/', 'roslaunch probe.launch'],
+//     ['../configurations/target_system/', 'roslaunch effector.launch'],
+//     ['../configurations/target_system/', 'roslaunch g4t1.launch'],
+//     ['../configurations/target_system/', 'roslaunch g3t1_1.launch'],
+//     ['../configurations/target_system/', 'roslaunch g3t1_2.launch'],
+//     ['../configurations/target_system/', 'roslaunch g3t1_3.launch'],
+//     ['../configurations/target_system/', 'roslaunch g3t1_4.launch'],
+//     ['../configurations/target_system/', 'roslaunch g3t1_5.launch'],
+//     ['../configurations/simulation/', 'roslaunch injector.launch'],
+//     ['../configurations/system_manager/', 'roslaunch engine.launch'],
+// ]
+
 commands = [
-    ['../configurations/knowledge_repository/', 'roslaunch data_access.launch'],
-    ['../configurations/system_manager/', 'roslaunch enactor.launch'],
-    ['../configurations/logging_infrastructure/', 'roslaunch logger.launch'],
-    ['../configurations/target_system/', 'roslaunch probe.launch'],
-    ['../configurations/target_system/', 'roslaunch effector.launch'],
-    ['../configurations/target_system/', 'roslaunch g4t1.launch'],
-    ['../configurations/target_system/', 'roslaunch g3t1_1.launch'],
-    ['../configurations/target_system/', 'roslaunch g3t1_2.launch'],
-    ['../configurations/target_system/', 'roslaunch g3t1_3.launch'],
-    ['../configurations/target_system/', 'roslaunch g3t1_4.launch'],
-    ['../configurations/target_system/', 'roslaunch g3t1_5.launch'],
-    ['../configurations/simulation/', 'roslaunch injector.launch'],
-    ['../configurations/system_manager/', 'roslaunch engine.launch'],
+    ['../', 'bash run.sh'],
 ]
 
 app.get('/', function (req, res) {
